@@ -9,6 +9,7 @@ const Block = ({
   width,
   height,
   background,
+  padding,
   description,
   service,
 }) => {
@@ -34,7 +35,7 @@ const Block = ({
           {title}
         </h3>
       </div>
-      <div className="flex justify-center py-28">
+      <div className={`flex justify-center ${padding}`}>
         <Image src={imagePath} alt="Circles" width={width} height={height} />
       </div>
     </div>

@@ -13,6 +13,7 @@ const projects = [
     width: "552",
     height: "227",
     background: "bg-gradient-to-t from-violet-300 from-30% bg-gray-50 to-45%",
+    padding: "py-28",
     description: "Description about project",
     service: "Website design & code",
   },
@@ -22,6 +23,7 @@ const projects = [
     width: "267",
     height: "217",
     background: "bg-gradient-to-t from-stone-300 to-stone-100",
+    padding: "py-28",
     description: "Description about project",
     service: "Website design & code",
   },
@@ -30,7 +32,9 @@ const projects = [
     imagePath: CoralBackground,
     width: "555",
     height: "476",
-    background: "bg-gradient-to-t from-rose-200 from-30% bg-gray-50 to-45%",
+    background:
+      "bg-gradient-to-t from-rose-200 from-30% bg-gray-50 to-45% flex flex-col justify-end",
+    padding: "pt-28",
     description: "Description about project",
     service: "Website design & code",
   },
@@ -40,6 +44,7 @@ const projects = [
     width: "250",
     height: "251",
     background: "bg-gray-50",
+    padding: "py-28",
     description: "Description about project",
     service: "Website design & code",
   },
@@ -58,6 +63,7 @@ export default function Home() {
               width={project.width}
               height={project.height}
               background={project.background}
+              padding={project.padding}
               description={project.description}
               service={project.service}
             />
