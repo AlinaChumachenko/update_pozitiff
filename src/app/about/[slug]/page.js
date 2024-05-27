@@ -9,7 +9,7 @@ const projects = {
     title: "GOODBODI",
   },
   coral: {
-    title: "CoralCoalition",
+    title: "Coral Coalition",
   },
   vocalip: {
     title: "VOCALIP",

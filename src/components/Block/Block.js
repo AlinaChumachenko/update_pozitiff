@@ -6,6 +6,7 @@ import Popup from "../Popup/Popup";
 const Block = ({
   title,
   imagePath,
+  link,
   width,
   height,
   background,
@@ -27,6 +28,7 @@ const Block = ({
         title={title}
         description={description}
         service={service}
+        link={link}
       />
       <div className="flex justify-between">
         <ButtonPopup toggleOpen={() => setIsPopupOpen(true)} />

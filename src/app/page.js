@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title: "Coral Coalition",
-    path: "/about/coralcoalit",
+    path: "/about/coral",
     imagePath: CoralBackground,
     width: "555",
     height: "476",

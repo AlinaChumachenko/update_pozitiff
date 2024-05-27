@@ -3,7 +3,7 @@ import React from "react";
 import { ButtonClosePopup } from "@/components/Button/ButtonClosePopup.js";
 import { ButtonProdject } from "@/components/Button/ButtonProdject.js";
 
-const Popup = ({ isOpen, closePopup, title, description, service }) => {
+const Popup = ({ isOpen, closePopup, title, description, service, link }) => {
   return (
     <div
       className="absolute w-full h-full mx-auto p-12 bg-lime-500 bg-opacity-50 transition-all duration-100"
@@ -18,7 +18,7 @@ const Popup = ({ isOpen, closePopup, title, description, service }) => {
       <h2 className="flex self-center text-center mx-auto text-5xl text-white">
         {service}
       </h2>
-      <ButtonProdject />
+      <ButtonProdject link={link} />
     </div>
   );
 };
