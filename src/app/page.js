@@ -9,7 +9,7 @@ import Goodbackground from "@/images/asset.png";
 const projects = [
   {
     title: "VOCALIP",
-    path: "about/vocalip",
+    path: "/about/vocalip",
     imagePath: VocalipBackground,
     width: "552",
     height: "227",
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     title: "LOGICOM",
-    path: "about/logicom",
+    path: "/about/logicom",
     imagePath: LogicomBackground,
     width: "267",
     height: "217",
@@ -31,19 +31,18 @@ const projects = [
   },
   {
     title: "Coral Coalition",
-    path: "about/coralcoalit",
+    path: "/about/coralcoalit",
     imagePath: CoralBackground,
     width: "555",
     height: "476",
-    background:
-      "bg-gradient-to-t from-rose-200 from-30% bg-gray-50 to-45% flex flex-col justify-end",
+    background: "bg-gradient-to-t from-rose-200 from-30% bg-gray-50 to-45%",
     padding: "pt-28",
     description: "Description about project",
     service: "Website design & code",
   },
   {
     title: "GOODBODI",
-    path: "about/goodbodi",
+    path: "/about/goodbodi",
     imagePath: Goodbackground,
     width: "250",
     height: "251",
