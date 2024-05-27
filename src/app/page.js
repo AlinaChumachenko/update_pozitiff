@@ -10,8 +10,8 @@ const projects = [
   {
     title: "VOCALIP",
     imagePath: VocalipBackground,
-    width: "552px",
-    height: "227px",
+    width: "552",
+    height: "227",
     background: "bg-gradient-to-t from-violet-300 from-30% bg-gray-50 to-45%",
     description: "Description about project",
     service: "Website design & code",
@@ -19,8 +19,8 @@ const projects = [
   {
     title: "LOGICOM",
     imagePath: LogicomBackground,
-    width: "46px",
-    height: "46px",
+    width: "267",
+    height: "217",
     background: "bg-gradient-to-t from-stone-300 to-stone-100",
     description: "Description about project",
     service: "Website design & code",
@@ -28,17 +28,17 @@ const projects = [
   {
     title: "Coral Coalition",
     imagePath: CoralBackground,
-    width: "555px",
-    height: "476px",
-    background: "bg-fuchsia-50",
+    width: "555",
+    height: "476",
+    background: "bg-gradient-to-t from-rose-200 from-30% bg-gray-50 to-45%",
     description: "Description about project",
     service: "Website design & code",
   },
   {
     title: "GOODBODI",
     imagePath: Goodbackground,
-    width: "50px",
-    height: "50px",
+    width: "250",
+    height: "251",
     background: "bg-gray-50",
     description: "Description about project",
     service: "Website design & code",
@@ -48,19 +48,21 @@ const projects = [
 export default function Home() {
   return (
     <main>
-      <div className="container mx-auto mt-32">
-        {projects.map((project, index) => (
-          <Block
-            key={index}
-            title={project.title}
-            imagePath={project.imagePath}
-            width={project.width}
-            height={project.height}
-            background={project.background}
-            description={project.description}
-            service={project.service}
-          />
-        ))}
+      <div className="container mx-auto mt-32" style={{ width: "fit-content" }}>
+        <div className="grid-cols-1 lg:grid lg:grid-cols-2">
+          {projects.map((project, index) => (
+            <Block
+              key={index}
+              title={project.title}
+              imagePath={project.imagePath}
+              width={project.width}
+              height={project.height}
+              background={project.background}
+              description={project.description}
+              service={project.service}
+            />
+          ))}
+        </div>
         <ModalBlock />
       </div>
     </main>

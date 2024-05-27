@@ -17,7 +17,9 @@ const Block = ({
     setIsPopupOpen((prev) => !prev);
   };
   return (
-    <div className={`relative max-w-lg h-119 mx-auto ${background}`}>
+    <div
+      className={`relative max-w-lg h-119 mx-auto lg:mx-0 xl:w-full ${background}`}
+    >
       <Popup
         isOpen={isPopupOpen}
         closePopup={hundleTogglePopup}
