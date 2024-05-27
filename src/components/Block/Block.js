@@ -3,13 +3,21 @@ import { ButtonPopup } from "../Button/ButtonPopup";
 import Image from "next/image";
 import Popup from "../Popup/Popup";
 
-const Block = ({ title, imagePath, width, height, description, service }) => {
+const Block = ({
+  title,
+  imagePath,
+  width,
+  height,
+  background,
+  description,
+  service,
+}) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const hundleTogglePopup = () => {
     setIsPopupOpen((prev) => !prev);
   };
   return (
-    <div className="relative max-w-lg h-119 mx-auto bg-gradient-to-t from-violet-300 from-30% bg-gray-50 to-45%">
+    <div className={`relative max-w-lg h-119 mx-auto ${background}`}>
       <Popup
         isOpen={isPopupOpen}
         closePopup={hundleTogglePopup}
