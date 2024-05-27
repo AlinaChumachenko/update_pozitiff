@@ -9,6 +9,7 @@ import Goodbackground from "@/images/asset.png";
 const projects = [
   {
     title: "VOCALIP",
+    path: "about/vocalip",
     imagePath: VocalipBackground,
     width: "552",
     height: "227",
@@ -19,6 +20,7 @@ const projects = [
   },
   {
     title: "LOGICOM",
+    path: "about/logicom",
     imagePath: LogicomBackground,
     width: "267",
     height: "217",
@@ -29,6 +31,7 @@ const projects = [
   },
   {
     title: "Coral Coalition",
+    path: "about/coralcoalit",
     imagePath: CoralBackground,
     width: "555",
     height: "476",
@@ -40,6 +43,7 @@ const projects = [
   },
   {
     title: "GOODBODI",
+    path: "about/goodbodi",
     imagePath: Goodbackground,
     width: "250",
     height: "251",
@@ -59,6 +63,7 @@ export default function Home() {
             <Block
               key={index}
               title={project.title}
+              link={project.path}
               imagePath={project.imagePath}
               width={project.width}
               height={project.height}
