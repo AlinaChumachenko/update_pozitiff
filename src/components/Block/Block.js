@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ButtonPopup } from "../Button/ButtonPopup";
 import Image from "next/image";
 import Popup from "../Popup/Popup";
+import Heading from "../Heading";
 
 const Block = ({
   title,
@@ -32,10 +33,11 @@ const Block = ({
       />
       <div className="flex justify-between">
         <ButtonPopup toggleOpen={() => setIsPopupOpen(true)} />
+        <Heading text={title} />
 
-        <h3 className="text-right mt-12 mr-12 text-3xl tracking-wide text-indigo-900">
+        {/* <h3 className="text-right mt-12 mr-12 text-3xl tracking-wide text-indigo-900">
           {title}
-        </h3>
+        </h3> */}
       </div>
       <div className={`flex justify-center ${padding}`}>
         <Image src={imagePath} alt="Circles" width={width} height={height} />
